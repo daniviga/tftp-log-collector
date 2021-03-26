@@ -1,1 +1,1 @@
-# log-collector
+# tftp-log-collector
