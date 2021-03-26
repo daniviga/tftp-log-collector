@@ -1,18 +1,11 @@
 # tftp-log-collector
 
-## Installation
-
-Setup a python venv
+## System-wide installation
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+$> pip install .
 
-## Getting started
-
-```bash
-./log_collector.py -h
+$> log_collector.py -h
 
 usage: log_collector.py [-h] [--ext EXT] [--delay DELAY] csv_file
 
@@ -24,5 +17,16 @@ optional arguments:
   --ext EXT, -e EXT     File extension to be used (default: log)
   --delay DELAY, -d DELAY
                         Delay between collections in hrs (default: 12)
+```
 
+
+## Dev installation
+
+Setup a python venv
+
+```bash
+$> python3 -m venv venv
+$> source venv/bin/activate
+$> pip install -r requirements.txt
+$> ./log_collector.py -h
 ```
